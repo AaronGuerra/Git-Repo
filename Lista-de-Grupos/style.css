@@ -1,0 +1,163 @@
+:root {
+
+  --bg-dark: oklch(0.1889 0.0145 253.19);    
+  --bg-surface: oklch(0.6602 0.0311 268.21); 
+
+
+  --accent-main: oklch(0.60 0.30 255);       /* Azul eléctrico puro */
+  --accent-main-hover: oklch(0.72 0.25 210); /* Cyan/Verde eléctrico al pasar el mouse */
+
+
+  --text-primary: oklch(1 0 0);   
+  --text-muted: oklch(0.8452 0 0);     
+  
+  /* BORDES: Reflejo sutil estilo metal pulido */
+  --border-sutil: rgba(255, 255, 255, 0.39);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  background-color: var(--bg-dark);
+  color: var(--text-primary);
+}
+
+h1 {
+  font-size: 50px;
+  text-align: center;
+  font-weight: 300; 
+  font-stretch: extra-expanded;
+  color: var(--text-primary);
+  padding-bottom: 15px;
+  /* El título ahora emite un aura azul eléctrica fantasmal */
+  text-shadow: 0 0 25px oklch(0.50 0.25 250 / 0.5); 
+}
+
+.container {
+  margin-top: 100px;
+  margin-bottom: 30px;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--bg-surface);
+  padding: 30px;
+  border-radius: 15px;
+  border: 1px solid var(--border-sutil);
+  box-shadow: 0 20px 40px rgb(0 0 0 / 0.6); 
+}
+
+.search {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+form {
+  display: flex;
+}
+
+input {
+  padding: 15px 10px;
+  outline: none;
+  width: 400px;
+  border-radius: 10px;
+  margin-right: 20px;
+  background-color: var(--bg-dark);
+  border: 1px solid var(--border-sutil);
+  color: var(--text-primary);
+  transition: all 0.2s ease;
+}
+
+/* Al hacer clic en el input, el borde se ilumina en azul eléctrico */
+input:focus {
+  border-color: var(--accent-main);
+  box-shadow: 0 0 10px oklch(0.60 0.30 255 / 0.2);
+}
+
+input::placeholder {
+  color: var(--text-muted);
+  opacity: 0.4;
+}
+
+.li-container {
+  width: 100%;
+  color: var(--text-primary);
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  background-color: var(--bg-dark);
+  border: 1px solid var(--border-sutil);
+  border-radius: 5px;
+  margin-top: 15px;
+  display: flex;
+  transition: border-color 0.2s ease;
+}
+
+/* Detalle interactivo: Las filas se iluminan sutilmente al pasar el mouse */
+li:hover {
+  border-color: oklch(0.60 0.30 255 / 0.3);
+}
+
+li p {
+  margin: 0;
+  padding: 15px;
+  width: 100%;
+}
+
+.btn-delete {
+  margin-left: auto;
+  border-radius: 5px;
+  border: none;
+  padding: 0 10px;
+  font-weight: bold;
+  outline: none;
+  font-size: 1.2em;
+  
+  /* CAMBIOS AQUÍ: Rojo eléctrico neón sutilmente translúcido en reposo */
+  background-color: oklch(0.60 0.25 25 / 0.2); 
+  color: oklch(0.65 0.30 25); /* Texto rojo neón puro */
+  border: 1px solid oklch(0.65 0.30 25 / 0.4); /* Borde sutil brillante */
+  transition: all 0.25s ease;
+}
+
+.btn-delete:hover {
+  cursor: pointer;
+  
+  /* Al pasar el mouse, el rojo estalla al 100% de opacidad y emite un brillo láser */
+  background-color: oklch(0.60 0.30 25); 
+  color: #ffffff; /* Texto en blanco para contrastar con el fondo brillante */
+  box-shadow: 0 0 20px oklch(0.60 0.30 25); /* Efecto de resplandor eléctrico */
+  border-color: transparent;
+}
+
+.btn-add {
+  padding: 5px 15px;
+  border: none;
+  border-radius: 8px;
+  color: #ffffff; 
+  font-size: 1.4rem;
+  outline: none;
+  background-color: var(--accent-main);
+  transition: all 0.25s ease;
+}
+
+.btn-add:hover {
+  cursor: pointer;
+  /* Al mutar al hover, el azul eléctrico cambia a un verde/cian neón brutal */
+  background-color: var(--accent-main-hover);
+  color: oklch(0.12 0.03 270); /* El texto cambia a oscuro para mantener contraste con el verde brillante */
+  box-shadow: 0 0 20px var(--accent-main-hover); 
+}
+
+.empty {
+  color: var(--text-primary);
+}
