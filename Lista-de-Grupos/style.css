@@ -1,0 +1,151 @@
+:root { /* Zona para crear "variables" (colores guardados con nombre para reutilizarlos fácil) */
+  --bg-dark: oklch(0.1889 0.0145 253.19);    /* Color de fondo oscuro */
+  --bg-surface: oklch(0.6602 0.0311 268.21); /* Color de fondo de la caja central */
+
+  --accent-main: oklch(0.60 0.30 255);       /* Azul eléctrico brillante */
+  --accent-main-hover: oklch(0.72 0.25 210); /* Color cian/verde neón para cuando se pasa el mouse */
+
+  --text-primary: oklch(1 0 0);    /* Texto principal (blanco puro) */
+  --text-muted: oklch(0.8452 0 0); /* Texto secundario o apagado */
+  
+  --border-sutil: rgba(255, 255, 255, 0.39); /* Borde blanco semitransparente estilo metalizado */
+}
+
+body {
+  margin: 0; /* Quita los márgenes por defecto del navegador */
+  padding: 0; /* Quita el relleno por defecto */
+  font-family: Arial, Helvetica, sans-serif; /* Tipo de letra limpio */
+  line-height: 1.5; /* Espaciado cómodo entre líneas de texto */
+  background-color: var(--bg-dark); /* Aplica el fondo oscuro guardado en la variable */
+  color: var(--text-primary); /* Aplica el color de texto blanco */
+}
+
+h1 {
+  font-size: 50px; /* Tamaño del título */
+  text-align: center; /* Centra el título */
+  font-weight: 300; /* Hace la letra del título delgada */
+  font-stretch: extra-expanded; /* Intenta estirar un poco el ancho de las letras */
+  color: var(--text-primary);
+  padding-bottom: 15px; /* Espacio libre debajo del título */
+  text-shadow: 0 0 25px oklch(0.50 0.25 250 / 0.5); /* Crea un brillo o aura azul translúcida detrás del texto */
+}
+
+.container {
+  margin-top: 100px; /* Separa la caja del techo de la pantalla */
+  margin-bottom: 30px; /* Separa la caja del suelo de la pantalla */
+  width: 30%; /* La caja ocupará solo el 30% del ancho de la pantalla */
+  margin-left: auto; /* Junto con el de abajo, centra la caja en la pantalla */
+  margin-right: auto;
+  background-color: var(--bg-surface); /* Fondo grisáceo para la tarjeta */
+  padding: 30px; /* Espacio interior para que nada toque los bordes */
+  border-radius: 15px; /* Esquinas muy redondeadas */
+  border: 1px solid var(--border-sutil); /* Línea de borde delgada */
+  box-shadow: 0 20px 40px rgb(0 0 0 / 0.6); /* Sombra oscura gigante debajo para dar efecto de flotado */
+}
+
+.search {
+  margin-left: auto; /* Centra la zona de búsqueda */
+  margin-right: auto;
+  width: 100%; /* Ocupa todo el ancho disponible de su contenedor */
+}
+
+form {
+  display: flex; /* Pone el input y el botón uno al lado del otro en línea recta */
+}
+
+input {
+  padding: 15px 10px; /* Caja de texto alta y cómoda para escribir */
+  outline: none; /* Elimina el borde feo que los navegadores ponen por defecto al hacer clic */
+  width: 400px; /* Ancho de la barra de escritura */
+  border-radius: 10px; /* Bordes redondeados */
+  margin-right: 20px; /* Espacio de separación con el botón de agregar */
+  background-color: var(--bg-dark); /* Fondo oscuro para el interior de la barra */
+  border: 1px solid var(--border-sutil); /* Borde sutil */
+  color: var(--text-primary); /* Letra blanca al escribir */
+  transition: all 0.2s ease; /* Hace que cualquier cambio visual (como iluminarse) sea suave y no brusco */
+}
+
+input:focus { /* Estilos para cuando el usuario hace clic dentro para escribir */
+  border-color: var(--accent-main); /* El borde cambia a azul eléctrico */
+  box-shadow: 0 0 10px oklch(0.60 0.30 255 / 0.2); /* Crea un pequeño resplandor azul a los lados */
+}
+
+input::placeholder { /* Modifica el texto de guía ("Agregar banda...") */
+  color: var(--text-muted);
+  opacity: 0.4; /* Lo hace muy transparente para que no estorbe */
+}
+
+.li-container {
+  width: 100%;
+  color: var(--text-primary);
+  margin-top: 20px; /* Espacio arriba de la lista */
+  border-radius: 5px;
+}
+
+ul {
+  padding: 0; /* Quita los espacios interiores automáticos de las listas */
+}
+
+li {
+  list-style: none; /* Quita las viñetas/puntos automáticos de la lista */
+  background-color: var(--bg-dark); /* Fondo oscuro para cada banda agregada */
+  border: 1px solid var(--border-sutil);
+  border-radius: 5px;
+  margin-top: 15px; /* Separa una banda de la otra */
+  display: flex; /* Alinea el texto del grupo y su botón de borrar en los extremos */
+  transition: border-color 0.2s ease; /* Suaviza el cambio de color en el borde */
+}
+
+li:hover { /* Cuando pasas la flecha del mouse sobre una banda agregada... */
+  border-color: oklch(0.60 0.30 255 / 0.3); /* El borde se ilumina sutilmente con azul */
+}
+
+li p {
+  margin: 0; /* Quita márgenes rebeldes del párrafo */
+  padding: 15px; /* Margen interno para que el texto de la banda no toque los bordes */
+  width: 100%;
+}
+
+.btn-delete { /* Botón de eliminar (dentro de cada grupo) */
+  margin-left: auto; /* Empuja el botón completamente hacia la derecha de la fila */
+  border-radius: 5px;
+  border: none;
+  padding: 0 10px;
+  font-weight: bold;
+  outline: none;
+  font-size: 1.2em;
+  background-color: oklch(0.60 0.25 25 / 0.2); /* Fondo rojo neón muy transparente */
+  color: oklch(0.65 0.30 25); /* Texto rojo neón brillante */
+  border: 1px solid oklch(0.65 0.30 25 / 0.4); /* Borde rojo translúcido */
+  transition: all 0.25s ease; /* Transición suave para la animación de destrucción */
+}
+
+.btn-delete:hover { /* Cuando pasas el mouse sobre "Eliminar" */
+  cursor: pointer; /* Cambia la flecha por la mano de hacer clic */
+  background-color: oklch(0.60 0.30 25); /* El fondo se vuelve rojo sólido e intenso */
+  color: #ffffff; /* La palabra cambia a blanco para que se lea bien */
+  box-shadow: 0 0 20px oklch(0.60 0.30 25); /* Da un efecto de brillo láser rojo */
+  border-color: transparent; /* Esconde el borde anterior */
+}
+
+.btn-add { /* Botón de agregar */
+  padding: 5px 15px;
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 1.4rem;
+  outline: none;
+  background-color: var(--accent-main); /* Fondo inicial azul eléctrico */
+  transition: all 0.25s ease;
+}
+
+.btn-add:hover { /* Cuando paso el mouse sobre "Agregar" */
+  cursor: pointer;
+  background-color: var(--accent-main-hover); /* Cambia drásticamente a verde/cian neón */
+  color: oklch(0.12 0.03 270); /* Cambia el texto a un color casi negro para contrastar con el verde */
+  box-shadow: 0 0 20px var(--accent-main-hover); /* Genera un resplandor neón verde */
+}
+
+.empty {
+  color: var(--text-primary);
+}
