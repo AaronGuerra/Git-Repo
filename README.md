@@ -1,6 +1,6 @@
 <!-- BANNER PRINCIPAL -->
 <p align="center">
-  <img src="./img/github-header-banner-aaronguerra.png" alt="Aaron Guerra Header Banner" width="100%">
+  <img src="./github-header-banner-aaronguerra.png" alt="Aaron Guerra Header Banner" width="100%">
 </p>
 
 <!-- TÍTULO DINÁMICO (ANIMACIÓN DE ESCRITURA) -->
@@ -17,7 +17,7 @@
   <tr style="border: none; background: transparent;">
     <!-- Columna Izquierda: Imagen -->
     <td width="360" valign="top" style="border: none; padding-right: 20px;">
-      <img src="/img/pexels-peaky-29445974.jpg" alt="Creative Profile Visual" width="340" height="280" style="border-radius: 10px;" />
+      <img src="/pexels-peaky-29445974.jpg" alt="Creative Profile Visual" width="340" height="280" style="border-radius: 10px;" />
     </td>
     <!-- Columna Derecha: Texto -->
     <td valign="top" style="border: none; text-align: left;">
