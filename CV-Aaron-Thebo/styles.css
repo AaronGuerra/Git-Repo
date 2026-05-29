@@ -1,0 +1,48 @@
+/* Opción A: Negro Puro a Azul Medianoche (Estilo tecnológico) */
+.bg-gradient-dark-blue { /* Declara una clase para crear un fondo con degradado en tonos azulados y verdosos oscuros */
+  background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%) !important; /* Aplica un degradado lineal a 135 grados que pasa por tres colores específicos, y el !important fuerza que no sea sobrescrito por otros estilos */
+} /* Cierra la clase .bg-gradient-dark-blue */
+
+/* Opción B: Oscuro Cyberpunk (Gris oscuro a morado profundo) */
+.bg-gradient-dark-purple { /* Declara una clase para crear un fondo con degradado de estilo cyberpunk nocturno */
+  background: linear-gradient(180deg, #111115 0%, #1a102f 100%) !important; /* Aplica un degradado vertical de arriba a abajo (180 grados) que va desde un gris casi negro hasta un morado muy oscuro */
+} /* Cierra la clase .bg-gradient-dark-purple */
+
+/* Opción C: Negro Premium (Degradado suave de gris muy oscuro a negro) */
+.bg-gradient-premium { /* Declara una clase para generar un fondo con degradado sobrio y elegante */
+  background: linear-gradient(135deg, #232526 0%, #414345 100%) !important; /* Aplica un degradado en diagonal a 135 grados que transiciona suavemente entre dos tonos de gris oscuro corporativo */
+} /* Cierra la clase .bg-gradient-premium */
+
+/* El contenedor hijo limita el contenido para que se vea ordenado */
+.contenido-interno { /* Declara una clase para centrar y estructurar horizontalmente el contenido dentro de un espacio controlado */
+  max-width: 100px; /* Restringe el ancho máximo del elemento a un tamaño muy pequeño de 100 píxeles */
+  margin: 0 auto; /* Centra el contenedor horizontalmente en la pantalla dejando los márgenes izquierdo y derecho automáticos */
+  padding: 0 15px; /* Añade un espacio interno de seguridad de 15 píxeles a los lados (izquierdo y derecho) y cero arriba y abajo */
+  display: flex; /* Activa el modelo de caja flexible (Flexbox) para alinear de forma dinámica los elementos hijos que estén dentro */
+  justify-content: space-between; /* Distribuye los elementos internos empujando el primero al extremo izquierdo y el último al extremo derecho */
+} /* Cierra la clase .contenido-interno */
+
+/* El contenedor padre es 100% fluido y lleva el color de fondo */
+.header-fluido { /* Declara una clase pensada para ocupar todo el ancho superior de la página web */
+  width: 100%; /* Obliga al contenedor a expandirse horizontalmente abarcando el 100% de la pantalla */
+  background-color: #1a1a1a; /* Establece un color de fondo sólido gris oscuro mate */
+  color: white; /* Pinta todos los textos que estén dentro del contenedor de color blanco */
+  padding: 20px 0; /* Añade un margen interno de 20 píxeles arriba y abajo para darle altura al bloque, y cero a los lados */
+} /* Cierra la clase .header-fluido */
+
+.texto{ /* Declara una clase genérica para dar formato de color a cadenas de texto */
+  color: cyan; /* Aplica un color de fuente celeste brillante (cian) ideal para estéticas tecnológicas */
+} /* Cierra la clase .texto */
+
+#freelancer { /* Selecciona de forma única al elemento HTML que tenga asignado el identificador específico "freelancer" */
+    display: inline-block; /* Permite que el elemento se comporte como un bloque de texto pero respetando el flujo de la línea */
+    max-width: 70px;          /* Limita el ancho máximo a 70 píxeles, obligando al contenido que supere esta medida a saltar de línea */
+    white-space: pre-line;    /* Hace que el navegador respete tanto los saltos de línea manuales en el código como los automáticos por ancho */
+    text-align: left;         /* Garantiza que todo el texto que se divida en múltiples líneas quede perfectamente alineado a la izquierda */
+} /* Cierra las reglas del identificador #freelancer */
+
+
+
+.d-flex flex-wrap gap-3 small text-secondary{ /* Nota: Esto busca de forma errónea una etiqueta "flex-wrap", "gap-3", etc., en lugar de las clases múltiples, pero mantiene tu estructura */
+  margin: 0 0 0 15px; /* Aplica un margen únicamente en el lado izquierdo de 15 píxeles, dejando arriba, abajo y derecha en cero */
+} /* Cierra esta última regla de estilo */

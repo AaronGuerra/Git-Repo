@@ -1,0 +1,281 @@
+
+
+<!DOCTYPE html> <html lang="es"> <head>
+    <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1"> <title>Aarón Guerra — CV</title> 
+    <!--La Configuración Inicial (El <head>). Aquí preparo todo lo que el navegador necesita cargar antes de mostrar mi CV en la pantalla.-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Aquí añado mis propios toques de estilo personalizados sobre Bootstrap */
+        body { font-family: 'JetBrains Mono', monospace; background-color: #0d1117; } /* Fondo gris oscuro estilo GitHub */
+        h1, h2, h3, h4, h5, h6 { font-family: 'Syne', sans-serif; } /* Títulos con personalidad geométrica */
+        .accent { color: #00e5ff; } /* Mi color azul eléctrico de identidad */
+        .border-accent { border-color: #00e5ff !important; }
+        .hover-card { transition: all .2s ease-in-out; } /* Suavizo la animación cuando pasan el mouse por mis tarjetas */
+        .hover-card:hover { border-color: #00e5ff !important; transform: translateX(4px); } /* La tarjeta se mueve 4 píxeles a la derecha con un borde brillante */
+        .lang-fill { height: 3px; background: linear-gradient(90deg, #00e5ff, #00ff88); } /* Barra de idioma con degradado cyan-verde */
+        .badge { font-family: 'JetBrains Mono', monospace; }
+    </style>
+</head>
+<!--El Cuerpo del CV (El <body>). Aquí arranca el contenido real. Uso las clases de Bootstrap text-light (letras claras) y py-4 py-lg-5 (márgenes verticales generosos que aumentan en pantallas grandes).-->
+<body class="text-light py-4 py-lg-5">
+<div class="container" style="max-width:1200px">
+
+<!-- ══ HEADER (Limpiado de márgenes forzados) ══ -->
+    <div class="border border-secondary border-start border-4 rounded-0 bg-dark p-4 mb-4" style="border-left-color: #00e5ff !important;"> <!-- Las clases border y bg-dark crean una caja de fondo oscuro y borde gris, border-start border-4 añade un borde izquierdo grueso, rounded-0 quita el redondeado, p-4 y mb-4 añaden márgenes, y el style fuerza que el borde izquierdo sea color celeste brillante -->
+        <div class="d-flex flex-wrap align-items-start justify-content-between gap-4"> <!-- Las clases d-flex y flex-wrap activan un contenedor flexible que se adapta a pantallas chicas, align-items-start alinea el contenido arriba, justify-content-between separa los textos a la izquierda y los números a la derecha, y gap-4 da espacio entre ellos -->
+            <div> <!-- Esta etiqueta abre un bloque contenedor simple para agrupar toda la información de la izquierda (nombre, profesión y contactos) -->
+                <span class="badge bg-success bg-opacity-10 border border-success text-success text-uppercase small mb-3 d-inline-flex align-items-center gap-2"> <!-- Las clases bg-success bg-opacity-10 crean un fondo verde transparente al 10%, border y text-success dan borde y texto verde, text-uppercase pone mayúsculas, small achica la letra, mb-3 da espacio abajo, y d-inline-flex alinea el icono con el texto -->
+                    <i class="bi bi-circle-fill animate-pulse" style="font-size:.4rem"></i> <!-- Las clases bi-circle-fill cargan el icono de un punto, animate-pulse hace que parpadee, y el style define que sea de un tamaño muy pequeño (.4rem) --> Disponible para proyectos
+                </span> <!-- Esta etiqueta cierra el recuadro verde de disponibilidad -->
+                <h1 class="display-5 fw-bold mb-1"> <!-- Las clases display-5 y fw-bold hacen que el título principal sea grande y en negrita destacada, y mb-1 le deja una separación mínima en la parte inferior -->
+                    Aarón <span class="accent">"Thebo-Zero"</span> Guerra <!-- La clase accent aplica un color personalizado destacado (celeste/cyan) únicamente al texto "Thebo-Zero" que está dentro de este span -->
+                </h1> <!-- Esta etiqueta cierra el título principal del nombre -->
+                <p class="text-secondary text-uppercase small mb-3"> <!-- Las clases text-secondary tiñe el texto de gris, text-uppercase lo vuelve mayúsculas, small hace la letra pequeña, y mb-3 añade una separación media hacia abajo -->
+                    // Diseñador Gráfico Multimedia &amp; Futuro Desarrollador Full Stack <!-- El texto descriptivo de la profesión; &amp; es el código HTML para mostrar correctamente el símbolo "&" -->
+                </p> <!-- Esta etiqueta cierra el párrafo de la profesión -->
+                <div class="d-flex flex-wrap gap-3 small text-secondary"> <!-- Las clases d-flex y flex-wrap ordenan los datos de contacto en fila y los baja si no caben, gap-3 los separa entre sí, small achica la letra y text-secondary los pinta de gris -->
+                    <span><i class="bi bi-envelope accent me-1"></i>thebo1992@gmail.com</span> <!-- Carga el icono de un sobre (bi-envelope) de color celeste (accent) con un pequeño espacio a la derecha (me-1) seguido del correo electrónico -->
+                    <span><i class="bi bi-globe accent me-1"></i>thebo-zero.dev</span> <!-- Carga el icono de un planeta (bi-globe) de color celeste con espacio a la derecha seguido de la dirección del sitio web -->
+                    <span><i class="bi bi-github accent me-1"></i>github.com/AaronGuerra</span> <!-- Carga el icono de la marca GitHub (bi-github) de color celeste con espacio a la derecha seguido del enlace al perfil -->
+                    <span><i class="bi bi-geo-alt accent me-1"></i>Litueche, Chile / Remoto</span> <!-- Carga el icono de ubicación (bi-geo-alt) de color celeste con espacio a la derecha seguido del texto de residencia -->
+                </div> <!-- Esta etiqueta cierra la fila horizontal de los cuatro datos de contacto -->
+            </div> <!-- Esta etiqueta cierra el bloque izquierdo que agrupaba toda la información personal -->
+
+            <!-- Stats rápidos (Alineados nativamente gracias a Bootstrap) -->
+            <div class="d-flex gap-2 flex-wrap"> <!-- Las clases d-flex y flex-wrap crean una fila flexible para las tarjetas de números estadísticos, y gap-2 deja una separación pequeña entre cada tarjeta -->
+                <div class="text-center px-3 py-2 border border-secondary bg-black bg-opacity-50 hover-card"> <!-- Las clases text-center centra los textos, px-3 y py-2 dan márgenes internos, border border-secondary añade un borde gris, bg-black bg-opacity-50 crea un fondo negro translúcido, y hover-card añade un efecto visual al pasar el mouse -->
+                    <div class="fs-4 fw-bold accent">5+</div> <!-- Las clases fs-4 y fw-bold definen un tamaño de letra mediano-grande y en negrita, y accent le da el color celeste llamativo al número -->
+                    <div class="text-secondary" style="font-size:.65rem; letter-spacing:.1em">AÑOS EXP.</div> <!-- La clase text-secondary pinta el texto de gris, y el style reduce la fuente a un tamaño mínimo (.65rem) expandiendo el espacio entre letras (.1em) para un estilo tecnológico -->
+                </div> <!-- Esta etiqueta cierra la primera tarjeta correspondiente a los años de experiencia -->
+                <div class="text-center px-3 py-2 border border-secondary bg-black bg-opacity-50 hover-card"> <!-- Utiliza exactamente la misma combinación de diseño: texto centrado, márgenes internos, borde gris, fondo negro translúcido y efecto hover -->
+                    <div class="fs-4 fw-bold accent">14</div> <!-- Mismo estilo que el número anterior (mediano-grande, negrita y color celeste) aplicado a la cifra de proyectos -->
+                    <div class="text-secondary" style="font-size:.65rem; letter-spacing:.1em">PROY. DISEÑO</div> <!-- Mismo estilo de texto gris, tamaño mínimo y espaciado de letras aplicado a la etiqueta de proyectos de diseño -->
+                </div> <!-- Esta etiqueta cierra la segunda tarjeta correspondiente a los proyectos de diseño -->
+                <div class="text-center px-3 py-2 border border-secondary bg-black bg-opacity-50 hover-card"> <!-- Utiliza el mismo patrón de diseño estructural y estético para mantener la simetría visual con las tarjetas anteriores -->
+                    <div class="fs-4 fw-bold accent">10+</div> <!-- Mismo estilo (tamaño mediano-grande, negrita y color de acento celeste) aplicado a la cifra de repositorios -->
+                    <div class="text-secondary" style="font-size:.65rem; letter-spacing:.1em">REPOSITORIOS</div> <!-- Mismo estilo de texto gris, tamaño muy pequeño y letras separadas aplicado a la etiqueta de repositorios -->
+                </div> <!-- Esta etiqueta cierra la tercera tarjeta correspondiente a los repositorios de código -->
+            </div> <!-- Esta etiqueta cierra el contenedor flexible que agrupaba las tres tarjetas de estadísticas -->
+        </div> <!-- Esta etiqueta cierra la caja de organización general Flexbox que dividía el header en dos grandes secciones -->
+    </div> <!-- Esta etiqueta cierra definitivamente la caja principal oscura que encierra todo el Header -->
+
+ <div class="row g-4"> <!-- La clase row activa el sistema de filas de Bootstrap, y g-4 define una separación o canal de nivel 4 entre las columnas hijas -->
+        <!-- ══ COLUMNA PRINCIPAL ══ -->
+        <div class="col-lg-8"> <!-- La clase col-lg-8 determina que en pantallas grandes (computadoras) esta columna ocupará 8 de los 12 espacios de ancho disponibles de la fila -->
+
+            <!-- PERFIL -->
+            <div class="bg-dark border border-secondary p-4 mb-4"> <!-- Las clases bg-dark y border border-secondary crean una caja de fondo oscuro con borde gris sutil, p-4 le da espacio interno y mb-4 la separa de la sección inferior -->
+                <h6 class="text-uppercase small accent mb-3 d-flex align-items-center gap-2"> <!-- Las clases text-uppercase y small vuelven el título mayúscula y chico, accent le da color celeste, mb-3 añade un margen abajo, y d-flex con gap-2 alinea el icono horizontalmente con el texto -->
+                    <i class="bi bi-terminal-fill"></i> Perfil <!-- La clase bi-terminal-fill carga el icono de una consola de comandos antes de la palabra Perfil -->
+                    <span class="flex-fill border-bottom border-secondary ms-2"></span> <!-- La clase flex-fill hace que este elemento ocupe todo el espacio sobrante, y border-bottom junto a ms-2 dibuja una línea horizontal gris decorativa despegada del texto -->
+                </h6> <!-- Esta etiqueta cierra el encabezado de la sección de Perfil -->
+                <p class="text-secondary mb-3 small lh-lg"> <!-- Las clases text-secondary y small hacen el texto gris y pequeño, mb-3 le da espacio abajo, y lh-lg aumenta el interlineado (line-height) para que el párrafo sea más fácil de leer -->
+                    Diseñador Gráfico Multimedia en transición hacia el Desarrollo Full Stack. Cuento con <strong class="text-light">+5 años de experiencia en diseño</strong>, combinando la creatividad visual con la rigurosidad técnica para crear soluciones digitales integrales y eficientes, ya sea en equipo o de forma freelance. <!-- La etiqueta strong junto con text-light destacan los años de experiencia poniéndolos en negrita y color blanco brillante -->
+                </p> <!-- Esta etiqueta cierra el párrafo de la descripción del perfil profesional -->
+                <blockquote class="border-start border-secondary ps-3 my-0 py-1 italic bg-black bg-opacity-20"> <!-- La etiqueta blockquote define una cita textual; border-start y ps-3 le dan un borde izquierdo gris con espacio, my-0 y py-1 controlan los márgenes, italic inclina la letra y bg-black bg-opacity-20 genera un fondo negro translúcido al 20% -->
+                    <p class="text-light small mb-0">"Un buen programador es alguien que mira a ambos lados antes de cruzar una calle de sentido único."</p> <!-- Las clases text-light y small ponen la cita en color blanco y tamaño pequeño, mientras mb-0 elimina cualquier margen inferior por defecto -->
+                    <footer class="blockquote-footer text-light small text-end mt-1" style="font-size: .65rem; margin-right: 10px;">Doug Linder</footer> <!-- La clase blockquote-footer da formato de autor, text-light y small lo hacen blanco y chico, text-end lo alinea a la derecha, mt-1 da espacio arriba y el style ajusta el tamaño exacto y su margen derecho -->
+                </blockquote> <!-- Esta etiqueta cierra el bloque de la cita textual o frase célebre -->
+            </div> <!-- Esta etiqueta cierra la caja contenedora completa de la sección de Perfil -->
+
+            <!-- EXPERIENCIA -->
+            <div class="bg-dark border border-secondary p-4 mb-4"> <!-- Las clases bg-dark y border border-secondary crean el contenedor oscuro con borde gris suave, p-4 le da espacio interno de nivel 4 y mb-4 lo separa de la sección inferior -->
+                <h6 class="text-uppercase small accent mb-3 d-flex align-items-center gap-2"> <!-- Las clases text-uppercase y small vuelven el título mayúscula y chico, accent le da color celeste, mb-3 añade margen abajo, y d-flex con gap-2 alinea el icono horizontalmente con el texto -->
+                    <i class="bi bi-briefcase-fill"></i> Experiencia <!-- La clase bi-briefcase-fill carga el icono visual de un maletín de trabajo antes de la palabra Experiencia -->
+                    <span class="flex-fill border-bottom border-secondary ms-2"></span> <!-- La clase flex-fill hace que el elemento ocupe todo el ancho disponible, y border-bottom junto a ms-2 genera de forma dinámica la línea horizontal gris decorativa despegada a la derecha del título -->
+                </h6> <!-- Esta etiqueta cierra el encabezado de la sección de Experiencia -->
+
+                <!-- Card 1 -->
+                <div class="border border-secondary p-3 mb-3 hover-card"> <!-- Las clases border border-secondary añaden un borde gris, p-3 da espacio interno, mb-3 separa la tarjeta hacia abajo, y hover-card añade un efecto visual al pasar el mouse por encima -->
+                    <div class="d-flex justify-content-between align-items-start flex-wrap gap-2 mb-1"> <!-- d-flex y justify-content-between separan el título a la izquierda y la fecha a la derecha; align-items-start alinea arriba, flex-wrap los acomoda si no caben, gap-2 los separa y mb-1 deja un margen inferior mínimo -->
+                        <h6 class="fw-bold mb-0 text-light">SUPERVISOR DE DISEÑO | ENTRETENIMIENTOS INTEGRALES S.A.</h6> <!-- Las clases fw-bold y text-light muestran el cargo y la empresa en negrita destacada y con texto blanco brillante, mientras mb-0 elimina el margen inferior -->
+                        <span class="badge bg-black border border-secondary text-secondary small">Jun 2022 - Ago 2022</span> <!-- Las clases badge, bg-black y border border-secondary crean una etiqueta con fondo negro y borde gris, mientras text-secondary y small pintan el texto de gris y lo hacen pequeño para indicar las fechas -->
+                    </div> <!-- Esta etiqueta cierra la fila flexible del encabezado del primer puesto de trabajo -->
+                    <p class="accent small mb-2">Lonquén norte, Calera de Tango, R.M.</p> <!-- Las clases accent y small muestran la ubicación en color celeste y letra chica, mientras mb-2 le deja una separación inferior leve -->
+                    <p class="text-secondary small mb-2"> <!-- Las clases text-secondary y small tiñen el texto de gris y lo hacen pequeño para la descripción de funciones, dejando un espacio inferior leve de nivel 2 con mb-2 -->
+                        Conceptualicé, desarrollé y sistematicé la identidad visual y las marcas satélite de la compañía, asegurando la coherencia gráfica en todos los puntos de contacto de la imagen corporativa. Asimismo, negocié y coordiné una alianza estratégica temporal con partners clave para potenciar el alcance visual del proyecto dentro de los plazos establecidos.
+                    </p> <!-- Esta etiqueta cierra el párrafo descriptivo de las tareas del primer empleo -->
+                    <div class="d-flex flex-wrap gap-1"> <!-- Las clases d-flex y flex-wrap ordenan las etiquetas en fila y las baja si no caben en pantalla, mientras gap-1 crea una separación muy estrecha entre ellas -->
+                        <span class="badge bg-info bg-opacity-10 border border-info text-info small hover-card">Diseño Audiovisual</span> <!-- Las clases bg-info bg-opacity-10 dan fondo azul claro translúcido al 10%, border y text-info dan borde y texto azul, small achica la letra y hover-card añade el efecto al pasar el cursor -->
+                        <span class="badge bg-info bg-opacity-10 border border-info text-info small hover-card">DaVinci Resolve</span> <!-- Utiliza exactamente la misma combinación de diseño (fondo azul translúcido, borde, texto azul chico y efecto hover) para listar la herramienta DaVinci Resolve -->
+                        <span class="badge bg-info bg-opacity-10 border border-info text-info small hover-card">Photoshop</span> <!-- Utiliza exactamente la misma combinación de diseño (fondo azul translúcido, borde, texto azul chico y efecto hover) para listar la herramienta Photoshop -->
+                        <span class="badge bg-info bg-opacity-10 border border-info text-info small hover-card">Illustrator</span> <!-- Utiliza exactamente la misma combinación de diseño (fondo azul translúcido, borde, texto azul chico y efecto hover) para listar la herramienta Illustrator -->
+                    </div> <!-- Esta etiqueta cierra el grupo de tecnologías/habilidades de la primera tarjeta de experiencia -->
+                </div> <!-- Esta etiqueta cierra por completo la primera tarjeta de experiencia laboral -->
+
+                <!-- Card 2 -->
+                <div class="border border-secondary p-3 mb-3 hover-card"> <!-- Las clases border border-secondary añaden un borde gris, p-3 da espacio interno, mb-3 separa la tarjeta hacia abajo, y hover-card añade un efecto visual al pasar el mouse por encima -->
+                    <div class="d-flex justify-content-between align-items-start flex-wrap gap-2 mb-1"> <!-- d-flex y justify-content-between separan el título a la izquierda y la fecha a la derecha; align-items-start alinea arriba, flex-wrap los acomoda si no caben, gap-2 los separa y mb-1 deja un margen inferior mínimo -->
+                        <h6 class="fw-bold mb-0 text-light">DISEÑADOR EDITORIAL | PROG. INTERCULTURAL EDUCACIÓN BILINGÜE</h6> <!-- Las clases fw-bold y text-light muestran el cargo y la empresa en negrita destacada y con texto blanco brillante, mientras mb-0 elimina el margen inferior -->
+                        <span class="badge bg-black border border-secondary text-secondary small">Ago 2022 - Ene 2023</span> <!-- Las clases badge, bg-black y border border-secondary crean una etiqueta con fondo negro y borde gris, mientras text-secondary y small pintan el texto de gris y lo hacen pequeño para indicar las fechas -->
+                    </div> <!-- Esta etiqueta cierra la fila flexible del encabezado del segundo puesto de trabajo -->
+                    <p class="accent small mb-2">Paine, R.M.</p> <!-- Las clases accent y small muestran la ubicación en color celeste y letra chica, mientras mb-2 le deja una separación inferior leve -->
+                    <p class="text-secondary small mb-2"> <!-- Las clases text-secondary y small tiñen el texto de gris y lo hacen pequeño para la descripción de funciones, dejando un espacio inferior leve de nivel 2 con mb-2 -->
+                        Coordiné y maqueté la línea editorial de textos escolares para 10 comunidades indígenas del norte de Chile. Estructuré el diseño de información y la jerarquía visual de los contenidos para garantizar un material didáctico, accesible y adaptado a las necesidades pedagógicas del programa.
+                    </p> <!-- Esta etiqueta cierra el párrafo descriptivo de las tareas del segundo empleo -->
+                    <div class="d-flex flex-wrap gap-1"> <!-- Las clases d-flex y flex-wrap ordenan las etiquetas en fila y las baja si no caben en pantalla, mientras gap-1 crea una separación muy estrecha entre ellas -->
+                        <span class="badge bg-info bg-opacity-10 border border-info text-info small hover-card">Diseño Editorial</span> <!-- Las clases bg-info bg-opacity-10 dan fondo azul claro translúcido al 10%, border y text-info dan borde y texto azul, small achica la letra y hover-card añade el efecto al pasar el cursor -->
+                        <span class="badge bg-info bg-opacity-10 border border-info text-info small hover-card">InDesign</span> <!-- Utiliza exactamente la misma combinación de diseño (fondo azul translúcido, borde, texto azul chico y efecto hover) para listar la herramienta Adobe InDesign -->
+                        <span class="badge bg-info bg-opacity-10 border border-info text-info small hover-card">Illustrator</span> <!-- Utiliza exactamente la misma combinación de diseño (fondo azul translúcido, borde, texto azul chico y efecto hover) para listar la herramienta Adobe Illustrator -->
+                    </div> <!-- Esta etiqueta cierra el grupo de tecnologías/habilidades de la segunda tarjeta de experiencia -->
+                </div> <!-- Esta etiqueta cierra por completo la segunda tarjeta de experiencia laboral -->
+
+                <!-- Card 3 -->
+                <div class="border border-secondary p-3 mb-3 hover-card"> <!-- Las clases border border-secondary añaden un borde gris, p-3 da espacio interno, mb-3 separa la tarjeta hacia abajo, y hover-card añade un efecto visual al pasar el mouse por encima -->
+                    <div class="d-flex justify-content-between align-items-start flex-wrap gap-2 mb-1"> <!-- d-flex y justify-content-between separan el título a la izquierda y la fecha a la derecha; align-items-start alinea arriba, flex-wrap los acomoda si no caben, gap-2 los separa y mb-1 deja un margen inferior mínimo -->
+                        <h6 class="fw-bold mb-0 text-light">DISEÑADOR EDITORIAL | PROG. INTERCULTURAL EDUCACIÓN BILINGÜE</h6> <!-- Las clases fw-bold y text-light muestran el cargo y la empresa en negrita destacada y con texto blanco brillante, mientras mb-0 elimina el margen inferior -->
+                        <span class="badge bg-black border border-secondary text-secondary small">Jul 2023 - Dic 2023</span> <!-- Las clases badge, bg-black y border border-secondary crean una etiqueta con fondo negro y borde gris, mientras text-secondary y small pintan el texto de gris y lo hacen pequeño para indicar las fechas -->
+                    </div> <!-- Esta etiqueta cierra la fila flexible del encabezado del tercer puesto de trabajo -->
+                    <p class="accent small mb-2">Paine, R.M.</p> <!-- Las clases accent y small muestran la ubicación en color celeste y letra chica, mientras mb-2 le deja una separación inferior leve -->
+                    <p class="text-secondary small mb-2"> <!-- Las clases text-secondary y small tiñen el texto de gris y lo hacen pequeño para la descripción de funciones, dejando un espacio inferior leve de nivel 2 con mb-2 -->
+                        Estructuró y diagramó la colección de libros educativos para el programa curricular de 5º y 6º de educación básica en el norte de Chile. Diseñé infografías y recursos visuales complejos, optimizando la arquitectura de la información para facilitar el aprendizaje de los alumnos.
+                    </p> <!-- Esta etiqueta cierra el párrafo descriptivo de las tareas del tercer empleo -->
+                    <div class="d-flex flex-wrap gap-1"> <!-- Las clases d-flex y flex-wrap ordenan las etiquetas en fila y las baja si no caben en pantalla, mientras gap-1 crea una separación muy estrecha entre ellas -->
+                        <span class="badge bg-info bg-opacity-10 border border-info text-info small hover-card">Infografías</span> <!-- Las clases bg-info bg-opacity-10 dan fondo azul claro translúcido al 10%, border y text-info dan borde y texto azul, small achica la letra y hover-card añade el efecto al pasar el cursor -->
+                        <span class="badge bg-info bg-opacity-10 border border-info text-info small hover-card">InDesign</span> <!-- Utiliza exactamente la misma combinación de diseño (fondo azul translúcido, borde, texto azul chico y efecto hover) para listar la herramienta Adobe InDesign -->
+                        <span class="badge bg-info bg-opacity-10 border border-info text-info small hover-card">Procesos Visuales</span> <!-- Utiliza exactamente la misma combinación de diseño (fondo azul translúcido, borde, texto azul chico y efecto hover) para listar la aptitud de Procesos Visuales -->
+                    </div> <!-- Esta etiqueta cierra el grupo de tecnologías/habilidades de la tercera tarjeta de experiencia -->
+                </div> <!-- Esta etiqueta cierra por completo la tercera tarjeta de experiencia laboral -->
+
+                <!-- Card 4 -->
+                <div class="border border-secondary p-3 mb-0 hover-card"> <!-- Las clases border border-secondary añaden borde gris, p-3 da espacio interno, mb-0 quita la separación inferior para no dejar espacios sueltos al final de la sección, y hover-card añade el efecto visual al pasar el cursor -->
+                    <div class="d-flex flex-column align-items-start gap-2 mb-1"> <!-- Las clases d-flex y flex-column organizan el título y las fechas uno abajo del otro en vertical, align-items-start los alinea a la izquierda, gap-2 les da separación y mb-1 deja un margen inferior mínimo -->
+                        <h6 class="fw-bold mb-0 text-light">DISEÑADOR GRÁFICO MULTIMEDIA FREELANCE</h6> <!-- Las clases fw-bold y text-light muestran el cargo freelance en negrita destacada y con texto blanco brillante, mientras mb-0 elimina el margen inferior -->
+                        <!-- Corrección: Se cambió </div> final por </span> para cerrar correctamente la etiqueta -->
+                        <span class="badge bg-black border border-secondary text-secondary d-inline-block align-self-start text-start" id="freelancer">2017 - Presente</span> <!-- Las clases badge, bg-black y border border-secondary crean la etiqueta de fondo oscuro; text-secondary la pinta de gris; d-inline-block y align-self-start la obligan a medir solo lo necesario, text-start alinea a la izquierda y el id sirve de identificador -->
+                    </div> <!-- Esta etiqueta cierra el bloque vertical del encabezado del trabajo freelance -->
+                    <p class="accent small mb-2">Remoto (Chile)</p> <!-- Las clases accent y small muestran la modalidad de trabajo en color celeste y letra chica, mientras mb-2 le deja una separación inferior leve -->
+                    <p class="text-secondary small mb-2"> <!-- Las clases text-secondary y small tiñen el texto de gris y lo hacen pequeño para la descripción de funciones, dejando un espacio inferior leve de nivel 2 con mb-2 -->
+                        Postproducí piezas de video dinámicas para creadores de contenido y ejecuté transmisiones en vivo logrando la digitalización de eventos institucionales en pandemia. En paralelo, sistematicé la identidad visual de diversos clientes mediante logotipos vectoriales y manuales de marca normativos.
+                    </p> <!-- Esta etiqueta cierra el párrafo descriptivo de las tareas del rol independiente -->
+                    <div class="d-flex flex-wrap gap-1"> <!-- Las clases d-flex y flex-wrap ordenan las etiquetas en fila y las baja si no caben en pantalla, mientras gap-1 crea una separación muy estrecha entre ellas -->
+                        <span class="badge bg-info bg-opacity-10 border border-info text-info small hover-card">Multimedia</span> <!-- Las clases bg-info bg-opacity-10 dan fondo azul claro translúcido al 10%, border y text-info dan borde y texto azul, small achica la letra y hover-card añade el efecto al pasar el cursor -->
+                        <span class="badge bg-info bg-opacity-10 border border-info text-info small hover-card">Live Streaming</span> <!-- Utiliza exactamente la misma combinación de diseño (fondo azul translúcido, borde, texto azul chico y efecto hover) para listar la aptitud de Transmisiones en Vivo (Live Streaming) -->
+                        <span class="badge bg-info bg-opacity-10 border border-info text-info small hover-card">Branding</span> <!-- Utiliza exactamente la misma combinación de diseño (fondo azul translúcido, borde, texto azul chico y efecto hover) para listar la aptitud de Gestión de Marcas (Branding) -->
+                    </div> <!-- Esta etiqueta cierra el grupo de tecnologías/habilidades de la cuarta tarjeta de experiencia -->
+                </div> <!-- Esta etiqueta cierra por completo la cuarta y última tarjeta de experiencia laboral -->
+
+            </div> <!-- Esta etiqueta cierra la caja contenedora principal oscura de toda la sección "Experiencia" -->
+
+            <!-- PROYECTOS / CERTIFICACIONES TÉCNICAS (Armonizados con tu meta Full Stack) -->
+            <div class="bg-dark border border-secondary p-4">
+                <h6 class="text-uppercase small accent mb-3 d-flex align-items-center gap-2">
+                    <i class="bi bi-code-slash"></i> Proyectos Destacados Dev
+                    <span class="flex-fill border-bottom border-secondary ms-2"></span>
+                </h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item bg-transparent border-secondary d-flex align-items-start gap-3 px-0 py-2">
+                        <span class="p-2 border border-secondary text-info"><i class="bi bi-git"></i></span>
+                        <div>
+                            <div class="fw-semibold text-light small">Portfolio Web Autogestionable</div>
+                            <div class="text-secondary" style="font-size:.72rem">Desarrollo Full Stack utilizando tecnologías modernas para el control de assets multimedia.</div>
+                        </div>
+                    </li>
+                    <li class="list-group-item bg-transparent border-0 d-flex align-items-start gap-3 px-0 pt-2 pb-0">
+                        <span class="p-2 border border-secondary text-info"><i class="bi bi-layers-half"></i></span>
+                        <div>
+                            <div class="fw-semibold text-light small">UI/UX Component Library</div>
+                            <div class="text-secondary" style="font-size:.72rem">Diseño y estructuración de componentes Frontend reutilizables combinando lógica y layouts limpios.</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- ══ SIDEBAR ══ -->
+        <div class="col-lg-4 d-flex flex-column gap-4">
+
+            <!-- SKILLS (Actualizados a tu perfil real) -->
+            <div class="bg-dark border border-secondary p-4">
+                <h6 class="text-uppercase small accent mb-3 d-flex align-items-center gap-2">
+                    <i class="bi bi-cpu-fill"></i> Skills
+                    <span class="flex-fill border-bottom border-secondary ms-2"></span>
+                </h6>
+                <!-- Se le agregó la función hover-card a las skills, para darle más colors -->
+                <p class="text-secondary text-uppercase mb-1" style="font-size:.65rem;letter-spacing:.1em">Diseño &amp; Multimedia</p>
+                <div class="d-flex flex-wrap gap-1 mb-3">
+                    <span class="badge bg-secondary bg-opacity-25 border border-secondary text-light fw-normal hover-card">Diseño Gráfico</span>
+                    <span class="badge bg-secondary bg-opacity-25 border border-secondary text-light fw-normal hover-card">Diseño Editorial</span>
+                    <span class="badge bg-secondary bg-opacity-25 border border-secondary text-light fw-normal hover-card">Identidad Corporativa</span>
+                    <span class="badge bg-secondary bg-opacity-25 border border-secondary text-light fw-normal hover-card">Postproducción Video</span>
+                </div>
+
+                <p class="text-secondary text-uppercase mb-1" style="font-size:.65rem;letter-spacing:.1em">Software Creativo</p>
+                <div class="d-flex flex-wrap gap-1 mb-3">
+                    <span class="badge bg-secondary bg-opacity-25 border border-secondary text-light fw-normal hover-card">Photoshop</span>
+                    <span class="badge bg-secondary bg-opacity-25 border border-secondary text-light fw-normal hover-card">Illustrator</span>
+                    <span class="badge bg-secondary bg-opacity-25 border border-secondary text-light fw-normal hover-card">InDesign</span>
+                    <span class="badge bg-secondary bg-opacity-25 border border-secondary text-light fw-normal hover-card">Affinity</span>
+                    <span class="badge bg-secondary bg-opacity-25 border border-secondary text-light fw-normal hover-card">DaVinci Resolve</span>
+                </div>
+
+                <p class="text-secondary text-uppercase mb-1" style="font-size:.65rem;letter-spacing:.1em">Desarrollo (Full Stack en camino)</p>
+                <div class="d-flex flex-wrap gap-1">
+                    <span class="badge bg-secondary bg-opacity-25 border border-secondary text-light fw-normal hover-card">HTML5 / CSS3</span>
+                    <span class="badge bg-secondary bg-opacity-25 border border-secondary text-light fw-normal hover-card">JavaScript</span>
+                    <span class="badge bg-secondary bg-opacity-25 border border-secondary text-light fw-normal hover-card">Bootstrap</span>
+                    <span class="badge bg-secondary bg-opacity-25 border border-secondary text-light fw-normal hover-card">Git / GitHub</span>
+                    <span class="badge bg-secondary bg-opacity-25 border border-secondary text-light fw-normal hover-card">Node.js</span>
+                </div>
+            </div>
+
+            <!-- EDUCACIÓN -->
+            <div class="bg-dark border border-secondary p-4">
+                <h6 class="text-uppercase small accent mb-3 d-flex align-items-center gap-2">
+                    <i class="bi bi-mortarboard-fill"></i> Educación
+                    <span class="flex-fill border-bottom border-secondary ms-2"></span>
+                </h6>
+
+                <div class="mb-3">
+                    <div class="fw-semibold text-light small">Diseño Gráfico Multimedia</div>
+                    <div class="accent" style="font-size:.75rem">Técnico / Profesional Profesionalizante</div>
+                </div>
+                <div>
+                    <div class="fw-semibold text-light small">Desarrollo Full Stack</div>
+                    <div class="accent" style="font-size:.75rem">Formación Autodidacta / Bootcamps</div>
+                </div>
+            </div>
+
+            <!-- IDIOMAS -->
+            <div class="bg-dark border border-secondary p-4">
+                <h6 class="text-uppercase small accent mb-3 d-flex align-items-center gap-2">
+                    <i class="bi bi-translate"></i> Idiomas
+                    <span class="flex-fill border-bottom border-secondary ms-2"></span>
+                </h6>
+
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between small mb-1">
+                        <span class="text-light">Español</span><span class="text-secondary">Nativo</span>
+                    </div>
+                    <div class="bg-secondary bg-opacity-25" style="height:3px">
+                        <div class="lang-fill" style="width:100%"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex justify-content-between small mb-1">
+                        <span class="text-light">Inglés</span><span class="text-secondary">Técnico (Lectura/Documentación)</span>
+                    </div>
+                    <div class="bg-secondary bg-opacity-25" style="height:3px">
+                        <div class="lang-fill" style="width:60%"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <p class="text-center text-secondary mt-5 mb-0" style="font-size:.68rem;letter-spacing:.08em">
+        <span class="accent">&gt;</span> Aarón Guerra Zalazar // <span class="accent">Thebo-zero</span> · 2026 <span class="accent">_</span>
+    </p>
+
+</div>
+
+<!-- El script de bootstrap ahora cierra correctamente antes de terminar el body -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
