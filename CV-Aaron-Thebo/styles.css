@@ -1,0 +1,49 @@
+
+/* Opción A: Negro Puro a Azul Medianoche (Estilo tecnológico) */
+.bg-gradient-dark-blue {
+  background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%) !important;
+}
+
+/* Opción B: Oscuro Cyberpunk (Gris oscuro a morado profundo) */
+.bg-gradient-dark-purple {
+  background: linear-gradient(180deg, #111115 0%, #1a102f 100%) !important;
+}
+
+/* Opción C: Negro Premium (Degradado suave de gris muy oscuro a negro) */
+.bg-gradient-premium {
+  background: linear-gradient(135deg, #232526 0%, #414345 100%) !important;
+}
+
+/* El contenedor hijo limita el contenido para que se vea ordenado */
+.contenido-interno {
+  max-width: 100px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* El contenedor padre es 100% fluido y lleva el color de fondo */
+.header-fluido {
+  width: 100%;
+  background-color: #1a1a1a;
+  color: white;
+  padding: 20px 0;
+}
+
+.texto{
+  color: cyan;
+}
+
+#freelancer {
+    display: inline-block;
+    max-width: 70px;          /* Limita el ancho para forzar el salto */
+    white-space: pre-line;    /* Respeta los saltos de línea automáticos por ancho */
+    text-align: left;         /* Asegura la alineación a la izquierda */
+}
+
+
+
+.d-flex flex-wrap gap-3 small text-secondary{
+  margin: 0 0 0 15px;
+}
