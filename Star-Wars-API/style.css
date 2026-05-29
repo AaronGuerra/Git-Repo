@@ -1,0 +1,31 @@
+
+body{
+    background-color: #0c5ab9;
+    font-family: sans-serif, Helvetica, sans-serif;
+    font-weight: lighter;
+
+}
+
+h1{
+    text-align: center;
+    font-size: 70px;
+    color: #fff;
+}
+
+#posts{
+    background-color: #444;
+    position: relative;
+    margin: 0 auto;
+    height: 250px;
+    width: 670px;
+    padding-right: 40px;
+    border-radius: 10px;
+}
+
+li{
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 20px;
+    list-style-type: none;
+}
