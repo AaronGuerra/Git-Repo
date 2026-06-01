@@ -1,0 +1,71 @@
+<head>
+    <style>
+        body { background-color: #0d1117; color: #00ff66; font-family: 'Courier New', Courier, monospace; }
+        .card { background-color: #161b22; border: 1px solid #00ff66; color: #ffffff; }
+    </style>
+</head>
+
+<main class="container my-5">
+    <div class="row g-4"> <!-- g-4 añade separación entre las columnas -->
+        
+        <!-- COLUMNA IZQUIERDA: Datos Personales y Habilidades (Ocupa 4 de 12 columnas en pantallas grandes) -->
+    
+            <!-- Aquí meterás tu foto, contacto y habilidades -->
+ <aside class="col-lg-4">
+    <!-- Tarjeta de Perfil -->
+    <div class="card p-4 text-center mb-4">
+        <!-- Imagen de perfil circular con Bootstrap -->
+        <img src="/img/yo.png" class="rounded-circle mx-auto d-block mb-3" style="width: 150px;" alt="Aarón-Guerra">
+        <h1 class="h3 text-success">Aaron-Guerra-Zalazar</h1>
+        <p id="texto">Desarrollador-Full-Stack-Junior</p>
+        <hr class="border-success">
+        <ul class="list-unstyled text-start">
+            <li><strong>Email:</strong> thebo1992@gmail.com</li>
+            <li><strong>GitHub:</strong> github.com/AaronGuerra</li>
+        </ul>
+    </div>
+
+    <!-- Tarjeta de Habilidades -->
+    <div class="card p-4">
+        <h2 class="h5 text-success mb-3">Skills</h2>
+        <span class="badge bg-dark text-success border border-success me-1 mb-2">Penetration Testing</span>
+        <span class="badge bg-dark text-success border border-success me-1 mb-2">Python</span>
+        <span class="badge bg-dark text-success border border-success me-1 mb-2">Linux (Arch)</span>
+    </div>
+</aside>
+
+        <!-- COLUMNA DERECHA: Experiencia y Educación (Ocupa 8 de 12 columnas en pantallas grandes) -->
+        <section class="col-lg-8">
+    <!-- Sección de Experiencia -->
+    <div class="card p-4 mb-4">
+        <h2 class="h4 text-success mb-4">>_ Experiencia Laboral</h2>
+        
+        <article class="mb-4">
+            <div class="d-flex justify-content-between">
+                <h3 class="h5 mb-1 text-white">Lead Security Engineer</h3>
+                <span class="text-muted">2024 - Presente</span>
+            </div>
+            <p class="text-success small">Mr. Robot Corp</p>
+            <p>Auditorías de seguridad, pruebas de penetración y desarrollo de scripts automatizados para la defensa de servidores críticos.</p>
+        </article>
+
+        <hr class="border-secondary">
+
+        <article class="mb-3">
+            <div class="d-flex justify-content-between">
+                <h3 class="h5 mb-1 text-white">Junior Developer</h3>
+                <span class="text-muted">2022 - 2024</span>
+            </div>
+            <p class="text-success small">TechStart Inc</p>
+            <p>Mantenimiento de bases de datos y refactorización de código heredado a arquitecturas limpias.</p>
+        </article>
+    </div>
+            <!-- Aquí meterás tu perfil profesional, experiencia y estudios -->
+</section>
+
+<footer class="text-center py-4 mt-5 border-top border-dark">
+    <p class="text-muted small">// Compilado por Hackerman en 2026. Hecho con Bootstrap 5 y HTML Semántico.</p>
+</footer>
+
+    </div>
+</main>

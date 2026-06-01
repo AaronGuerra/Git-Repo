@@ -1,0 +1,101 @@
+/*body {
+      padding: 10px;
+}*/
+
+/* Cambia el color del título principal (H1) */
+h1, h2, h3, h4, p, li {font-family: Arial, Helvetica, sans-serif;}
+
+hr {
+    height: 5px;
+    background-color: #0499D1;
+}
+
+/* Cambia el color del título principal (H1) */
+h1 {
+    text-align: center;  
+    color: #0499D1;
+    font-weight: bold;
+    font-size: 95px;
+    margin-top: 15px;
+    margin-bottom: 10px; 
+}
+
+/* Cambia el color de los subtítulos ( H2) */
+h2 {
+    margin: 10px 0 40px 0 ;
+    font-stretch: extra-expanded;
+    text-align: center;
+    font-size: 30px;
+    color: #000;
+    font-weight: lighter;
+}
+
+ /* Cambia el color de los subtítulos ( H3) */
+h3 { 
+    font-size: 25px;
+    color: #0499D1; 
+}
+
+/* Cambia los distintos H3 y H4 individualmente */
+#resumen {
+    margin: 30px 5px -5px 60px;
+    color: #0499D1; 
+}
+
+#edu {
+    margin: 30px 5px -5px 60px;
+}
+
+#titu{
+    margin: 15px 5px -5px 60px;
+}
+
+#exp{
+    margin: 30px 5px -5px 60px;
+}
+
+#super{
+    margin: 15px 5px -5px 60px;
+}
+
+#edit{
+    margin: 25px 5px -5px 60px;
+}
+
+#edit2{
+    margin: 25px 5px -5px 60px;
+}
+
+#free{
+    margin: 25px 5px -5px 60px;
+}
+
+#app{
+    margin: 30px 5px 10px 60px;
+}
+
+#dgm{
+    margin: 10px 5px -5px 60px;
+}
+
+#prog{
+    margin: 10px 5px -5px 60px;
+}
+
+/* Cambia el color de los subtítulos ( H4) */
+ h4 {
+    color: #000;
+    font-weight: bolder;
+}
+        
+p {
+    margin: 12px 0 0 60px;        
+    color: #000; /* Un gris oscuro (más suave que el negro puro, mejora la lectura) */
+}
+
+li {
+    margin: 0 0 5px 40px;
+    color: #000;
+}
+
+   
