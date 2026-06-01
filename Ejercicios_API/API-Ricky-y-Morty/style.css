@@ -1,0 +1,72 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #202329;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+
+/*Botón*/
+button {
+    background-color: #11b0c8;
+    color: #202329;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: #f58220;
+}
+
+
+/*Cards para que se vea mejor el personaje y sus stats:*/
+.card {
+    background-color: #3c3e44;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.card h2 {
+    margin: 15px 0 10px 0;
+    color: #11b0c8;
+}
+
+
+/* Los estados del personaje que salga al azar*/
+.status-alive {
+    color: #4caf50; /* Verde */
+    font-weight: bold;
+}
+
+.status-dead {
+    color: #ff0040;/* Rojo*/
+    font-weight: bold;
+}
+
+.status-unknown {
+    color: #c9cc0b; /* Amarillo */
+    font-weight: bold;
+}
